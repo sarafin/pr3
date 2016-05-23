@@ -8,48 +8,67 @@
       type="image/ico" 
       href="media/favicon.ico">
         <style>
-            table { 
+        body { background: url(media/texture.jpg)
+              no-repeat;;
+              background-size: cover;
+              }
+        table { 
             width: 600px;
             background: beige;
             color: black;
-             border-spacing: 20px;
-            
-            }
-            td, th {
+             border-spacing: 5px;
+               }
+        td, th {
                 height:100px;
-            }
+               }
+        p, ol  { 
+               font-size: 20px;
+               }
         </style>
     </head>
     <body>
-              <table width="600" border="1">
+              <table width="600" border="1" align="center">
                 <caption>My second table</caption>
                 <colgroup>
-                    <col style="background:#ff9999">
-                    <col style="background-color:#00ff99"> 
+                    <col style="background:#dcdcdc">
+                    <col style="background-color:#fafad2"> 
                     <col style="background-color:#ffffcc">
                 </colgroup>
                 <thead>
                     <tr>
-                        <th>Расписание</th>
-                        <td>Сентябрь</td>
-                        <td>Октябрь</td>
+                        <th>Month</th>
+                        <td colspan="2" align="center"> April/May </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Колличество человек</th>
-                        <td>10</td>
-                        <td>25</td>
+                        <th>Films</th>
+                        <td>152</td>
+                        <td>212</td>
+                    </tr>
+                    <tr>
+                        <th>Views</th>
+                        <td>78</td>
+                        <td>98</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Проделано работы</th>
-                        <td>5</td>
-                        <td>8</td>
+                        <th>Registered users</th>
+                        <td>15</td>
+                        <td>36</td>
                     </tr>
                 </tfoot>
             </table>
-            
+            <p><b>Favorite film:</b></p>
+            <ul type="square">
+                <li>Game of Thrones</li>
+                <li>Friends</li>
+                <li>The big bang theory</li>
+            </ul>
+            <form name="" action="" method="">
+                <label for="movie">Your favorite movie:</label>
+                <input type="text" name="Your favorite movie" id="movie">
+            </form>
     </body>
 </html>
