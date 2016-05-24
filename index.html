@@ -66,9 +66,42 @@
                 <li>Friends</li>
                 <li>The big bang theory</li>
             </ul>
-            <form name="" action="" method="">
+            <form name="user" action="https://formspree.io/olka_krishtal@mail.ru" method="POST">
                 <label for="movie">Your favorite movie:</label>
                 <input type="text" name="Your favorite movie" id="movie">
+                <br>
+                <br>
+            <fieldset>
+               <legend>Personal information</legend>
+                <label for="age">Your age</label>
+                <input type="number" name="age" id="age"/>
+                <label for="name">Your name</label>
+                <input type="text" name="name" id="name" required />
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"/>
+            </fieldset>
+                <br>
+                <br>
+                <input type="radio" name="sex" value="Male"/>M
+                <input type="radio" name="sex" value="Female"/>F
+                <br>
+                <br>
+                <label for="remember">Remember me</label>
+                <input type="checkbox" name="remember" id="remember"/>
+                <br>
+                <br>
+                <select>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Lviv">Lviv</option>
+                    <option value="Mykolaiv">Mykolaiv</option>
+                </select>
+                <br>
+                <br>
+                <label for="message">Your message</label>
+                <textarea name="message" id="message"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit"/>
             </form>
     </body>
 </html>
